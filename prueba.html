@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examen</title>
+</head>
+<body>
+
+	<h2 >LA CRUEL REALIDAD</h2><br><br>
+
+	<?php
+
+	$importe = 1000;
+	$iva = $importe * 0.16;
+	$subtotal = $importe + $iva;
+	$isr 10 / $importe;
+	$otroIva = 160;
+	$total = $subtotal - $isr - $otroIva;
+
+	echo ("IMPORTE: " . $importe);
+	echo ("IVA: " . $iva);
+	echo ("SUBTOTAL: " . $subtotal);
+	echo ("RETENCIÓN ISR: " . $isr);
+	echo ("RETENCIÓN IVA: " . $otroIva);
+	echo ("TOTAL: " . $total);
+
+	?>
+	
+</body>
+</html>

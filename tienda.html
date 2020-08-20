@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LaTienda</title>
+	
+	<style>
+	
+		img
+		{
+			border-radius: 5px;
+		}
+		
+		body
+		{
+			
+		}
+		
+		h2
+		{
+			color: white;
+		}
+		
+		input
+		{
+			border-radius: 5px;
+		}
+		
+	</style>
+	
+	<script>
+	
+	 	function Suma()
+		{
+			Dato1= parseFloat(document.For.P1.value); 
+			Dato2= parseFloat(document.For.P2.value); 
+			Dato3= parseFloat(document.For.P3.value); 
+			Dato4= parseFloat(document.For.P4.value); 
+			Dato5= parseFloat(document.For.P5.value); 
+			Dato6= parseFloat(document.For.P6.value); 
+			Dato7= parseFloat(document.For.P7.value); 
+			Dato8= parseFloat(document.For.P8.value); 
+			Dato9= parseFloat(document.For.P9.value); 
+			Dato10= parseFloat(document.For.P10.value); 
+			Dato11= parseFloat(document.For.P11.value); 
+			Dato12= parseFloat(document.For.P12.value);
+			
+			document.For.Can.value= Dato1+Dato2+Dato3+Dato4+Dato5+Dato6+Dato7+Dato8+Dato9+Dato10+Dato11+Dato12;
+			document.For.Sub.value= (Dato1*2000)+(Dato2*3000)+(Dato3*4000)+(Dato4*2000)+(Dato5*3000)+(Dato6*4000)+(Dato7*2000)+(Dato8*3000)+(Dato9*4000)+(Dato10*2000)+(Dato11*2500)+(Dato12*1000);
+			document.For.IVA.value= document.For.Sub.value*0.16;
+			document.For.Tot.value= parseFloat(document.For.Sub.value)+parseFloat(document.For.IVA.value);  		
+		}
+		
+	</script>
+	
+</head>
+	
+<body>
+	
+	<body background="../tiendaonline/wood4.png">
+	
+	<center><h2>SNEAKERS ONLINE</h2><br><br></center>
+	
+	<form name="For">
+		
+		<center><table border="0" width="40%">
+			<tr>
+				<td><img src="../tiendaonline/1.jpg" width="200px" ></td>
+				<td>$2000<br><input type="number" min="0" max="30" name="P1" value="0"></td>	
+				<td><img src="../tiendaonline/2.jpg" width="200px" ></td>	
+				<td>$3000<br><input type="number" min="0" max="30" name="P2" value="0"></td>	
+				<td><img src="../tiendaonline/3.jpg" width="200"></td>	
+				<td>$4000<br><input type="number" min="0" max="30" name="P3" value="0"></td>	
+			</tr>
+			
+			<tr>
+				<td><img src="../tiendaonline/4.jpg" width="200px" ></td>
+				<td>$2000<br><input type="number" min="0" max="30" name="P4" value="0"></td>	
+				<td><img src="../tiendaonline/5.jpg" width="200px"  ></td>	
+				<td>$3000<br><input type="number" min="0" max="30" name="P5" value="0"></td>	
+				<td><img src="../tiendaonline/6.jpg" width="200px" ></td>	
+				<td>$4000<br><input type="number" min="0" max="30" name="P6" value="0"></td>	
+			</tr>
+			
+			<tr>
+				<td><img src="../tiendaonline/7.jpg" width="200px" ></td>
+				<td>$2000<br><input type="number" min="0" max="30" name="P7" value="0"></td>	
+				<td><img src="../tiendaonline/8.jpg" width="200"></td>	
+				<td>$3000<br><input type="number" min="0" max="30" name="P8" value="0"></td>	
+				<td><img src="../tiendaonline/9.jpg" width="200px" ></td>	
+				<td>$4000<br><input type="number" min="0" max="30" name="P9" value="0"></td>	
+			</tr>
+			
+			<tr>
+				<td><img src="../tiendaonline/10.jpg" width="200px" ></td>
+				<td>$2000<br><input type="number" min="0" max="30" name="P10" value="0"></td>	
+				<td><img src="../tiendaonline/11.jpg"width="200px"></td>	
+				<td>$2500<br><input type="number" min="0" max="30" name="P11" value="0"></td>	
+				<td><img src="../tiendaonline/12.jpg" width="200px"></td>	
+				<td>$1000<br><input type="number" min="0" max="30" name="P12" value="0"></td>	
+			</tr>
+		</table></center><br><br>
+		
+		<center><input type="button" value="Enviar" name="Env" onClick="Suma()"></center><br><br>
+	
+		<center><table>
+			<tr>
+				<td>Cantidad</td>
+				<td><input type="text" name="Can"></td>
+			</tr>
+			<tr>
+				<td>Subtotal</td>
+				<td><input type="text" name="Sub"></td>
+			</tr>
+			<tr>
+				<td>IVA</td>
+				<td><input type="text" name="IVA"></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td><input type="text" name="Tot"></td>
+			</tr>
+		</table></center>
+		
+	</form>
+	
+</body>
+</html>
